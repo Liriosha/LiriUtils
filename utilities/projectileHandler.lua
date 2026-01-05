@@ -28,13 +28,7 @@ newProjectile(
 		self.running = false
 		-- add effects/damage here
 	end
-).exclude({owner.Character})
-
-NOTES:
-- Hitboxes are visualized if config.showHitboxes == true
-- Collision ignores descendants of this script
-- Multiple projectiles are supported
-- Stops when self.running = false
+).exclude{owner.Character}
 ]]
 
 local projectiles = {}
